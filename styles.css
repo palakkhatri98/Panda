@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    position: relative;
+}
+
+.panda {
+    position: relative;
+    cursor: pointer;
+    animation: wave 2s infinite;
+}
+
+.speech-bubble {
+    position: absolute;
+    top: -40px; /* Adjusted position */
+    left: 80px;
+    background-color: transparent; /* Transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#message {
+    margin: 0;
+    font-size: 78px;
+    color: rgb(18, 12, 23);
+}
+
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25%, 75% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+}
